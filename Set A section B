@@ -62,7 +62,7 @@ x="1"+2+4;
 document.write(x);
 </script>
 
-a. 16
+a. 16 *answer;
 b. 124
 c. 34
 d. 124.0
