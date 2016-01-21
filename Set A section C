@@ -1,0 +1,147 @@
+
+Section C
+
+Technical Test (Subjective) 		    45 Marks
+
+
+1) Help Sheeba out 									    10 marks
+
+Sheeba was asked by a Recruiter to write down 100 numbers (1-100) randomly 
+but making sure that no number is repeated twice. At the end, the Recruiter found 
+out that Sheeba had done her work perfectly, but committed just one mistake of 
+repeating a number twice. Recruiter asked Sheeba that she recruiter her only 
+under one condition! If Sheeba is able to find out the only number which she is 
+repeated in an optimised manner.
+
+Can you write a pseudocode, which can help Sheeba to find out the number which 
+got repeated twice?
+
+
+
+//-------------------------------------------------------------------------------
+
+#include<iostream>
+#include<vector>
+#include<stdio.h>
+#include<algorithm>
+#include<string.h>
+//#include<conio>
+#include <bits/stdc++.h>
+// answer can be found in (O)nlogn , sorting the list and returning the repeated number//
+using namespace std;
+
+int main ()
+{
+    int n =100;
+    //scanf("%d",&n);
+    
+    vector<int>vec;
+    
+    for(int i = 0 ; i < n ;i++)
+    {
+        int data;
+        scanf("%d",&data);
+        vec.push_back(data);
+    }
+    
+    sort(vec.begin(), vec.end());
+    int ans;
+    for(int i = 0 ; i <n ; i++)
+    {
+    	if(vec[i] == vec [i+1])
+    	{
+    		ans =vec[i];
+    		break;
+    	}
+    }
+    
+    printf("%d",ans);
+}   
+    
+  //-----------------------------------------end of question 1--------------------------------  
+
+
+2) Design a website for a travel company						     15 marks
+
+(Having the following requirements)
+a. User will have to select an origin and destination location.
+b. User will have to select from and to date.
+c. Display some high resolution images as preview of the location when user 
+d. Show list of all travel destinations available for the selected time frame as hits submit.
+    -> Recommendation (List size 1<=N<=50).
+e. Show fares and other expenses.
+
+You are supposed to write code in HTML and JavaScript. Syntax is not a problem, 
+your understanding of the problem statement and approach to the same is of primary concern.
+
+
+3) Closest to zero 									    20 Marks
+
+This problem is also called minimum absolute sum pair. You are given an array of integers, containing both +ve and -ve numbers. You need to find the two elements such that their sum is closest to zero. eg. Array [15, 5, -20, 30, -45] Output should be 15, -20.
+
+Note: We want the sum to be closest to zero not minimum. The minimum in the above example would be (-20, -45), but that is incorrect.
+
+//----------------------------solution----------------------------------//
+
+#include<iostream>
+#include<vector>
+#include<stdio.h>
+#include<algorithm>
+#include<string.h>
+#include<conio.h>
+//#include <bits/stdc++.h>
+
+using namespace std;
+
+int main ()
+{
+    int n ;
+    scanf("%d",&n);
+    
+    vector<int>vec;
+    
+    for(int i = 0 ; i < n ;i++)
+    {
+        int data;
+        scanf("%d",&data);
+        vec.push_back(data);
+    }
+    
+    //sort(vec.begin(), vec.end());
+    
+    int a , b ;
+    int minsum = 214748364;
+    int fa ,fb;
+    
+    for(int i = 0 ; i<n ; i++)
+    {
+        a = vec[i];
+        
+        for(int k = i+1 ; k < n ;k++)
+        {
+            int b =vec[k];
+            int sum =abs(a+b);
+            if(sum < minsum)
+            {
+                minsum =sum;
+                fa =a;
+                fb = b;
+            }
+        }
+            
+        
+         
+        
+    }
+
+  printf("%d %d\n",fa,fb);
+getchar();
+getchar();
+return 0 ;    
+}
+
+//---------------------------------------end of question 3-----------------------------------------------------------//
+
+
+**** End of paper, Thank You! ****
+
