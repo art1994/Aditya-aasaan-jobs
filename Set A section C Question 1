@@ -1,0 +1,39 @@
+#include<iostream>
+#include<vector>
+#include<stdio.h>
+#include<algorithm>
+#include<string.h>
+//#include<conio>
+#include <bits/stdc++.h>
+// answer can be found in (O)nlogn , sorting the list and returning the repeated number//
+using namespace std;
+
+int main ()
+{
+    int n =100;
+    //scanf("%d",&n);
+    
+    vector<int>vec;
+    
+    for(int i = 0 ; i < n ;i++)
+    {
+        int data;
+        scanf("%d",&data);
+        vec.push_back(data);
+    }
+    
+    sort(vec.begin(), vec.end());
+    int ans;
+    for(int i = 0 ; i <n ; i++)
+    {
+    	if(vec[i] == vec [i+1])
+    	{
+    		ans =vec[i];
+    		break;
+    	}
+    }
+    
+    printf("%d",ans);
+}   
+    
+  //-----------------------------------------end of question 1--------------------------------  
