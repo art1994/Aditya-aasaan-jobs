@@ -1,0 +1,58 @@
+#include<iostream>
+#include<vector>
+#include<stdio.h>
+#include<algorithm>
+#include<string.h>
+#include<conio.h>
+//#include <bits/stdc++.h>
+
+using namespace std;
+
+int main ()
+{
+    int n ;
+    scanf("%d",&n);
+    
+    vector<int>vec;
+    
+    for(int i = 0 ; i < n ;i++)
+    {
+        int data;
+        scanf("%d",&data);
+        vec.push_back(data);
+    }
+    
+    //sort(vec.begin(), vec.end());
+    
+    int a , b ;
+    int minsum = 214748364;
+    int fa ,fb;
+    
+    for(int i = 0 ; i<n ; i++)
+    {
+        a = vec[i];
+        
+        for(int k = i+1 ; k < n ;k++)
+        {
+            int b =vec[k];
+            int sum =abs(a+b);
+            if(sum < minsum)
+            {
+                minsum =sum;
+                fa =a;
+                fb = b;
+            }
+        }
+            
+        
+         
+        
+    }
+
+  printf("%d %d\n",fa,fb);
+getchar();
+getchar();
+return 0 ;    
+}
+
+//---------------------------------------end of question 3-----------------------------------------------------------//
