@@ -8,7 +8,7 @@ Note: All questions are of 1.5 marks (question 1 - 30), no negative marking!
 elements are not allowed
 
 a. cleared
-b. clear
+b. clear*answer
 c. float
 d. both and b above
 e. None of the above
@@ -182,7 +182,7 @@ a. add(Object x);
 b. remove(Object x);
 c. insert(int i, Object x);
 d. contains(Object x);
-e. set(int i, Object x);  *answer *answer
+e. set(int i, Object x);  *answer 
 
 
 18)What is the value of n after the following code is executed?
@@ -286,7 +286,7 @@ e. None of the above
 
 23) Which of the following Collection are synchronized by nature ?
 
-a. Vector
+a. Vector*answer
 b. SortedSet
 c. HashTable
 d. HashMap
@@ -300,7 +300,7 @@ x.concat(y);
 System.out.print(x);
 
 a. abc
-b. abcxyz
+b. abcxyz*answer
 c. xyzabc
 d. abc xyz
 e. None of the above
@@ -309,7 +309,7 @@ e. None of the above
 25) How to send data in GET request method?
 
 a. We can't
-b. Through URL *answer
+b. Through URL *answer 
 c. Through payload
 d. b & c
 e. None of these
@@ -326,7 +326,7 @@ e. None of the above
 
 27) The command we do use to delete rows is
 
-a. delete *answer
+a. delete *answer 
 b. drop
 c. truncate
 d. All of above
