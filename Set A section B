@@ -1,0 +1,360 @@
+Section B
+
+    Technical Test (Objective) 		    45 Marks
+
+Note: All questions are of 1.5 marks (question 1 - 30), no negative marking!
+
+1) The _____ property specifies which sides of an element other than floating 
+elements are not allowed
+
+a. cleared
+b. clear
+c. float
+d. both and b above
+e. None of the above
+
+
+2) What is CSS float?
+
+a. Allows other elements to wrap around an element 
+b. Element can be pushed to the left or right
+c. Both a and b above *answer
+d. Element can be pushed to any direction
+e. None of the above
+
+
+3) What is the output of the following code?
+
+< script type="text/javascript">
+x = 4 + "4";
+document.write(x);
+</script>
+
+a. 44 *answer
+b. 8
+c. 4
+d. 4.0
+e. 8.0
+
+
+4) The _____ property specifies the stack order of an element
+
+a. d-index
+b. s-index
+c. x-index
+d. z-index *answer
+e. None of the above
+
+
+5) Which of the following is true?
+
+a. Hiding an element can be done by setting the display property to "none"
+b. Hiding an element can be done by setting visibility property to "hidden"
+c. Both a and b above *answer
+d. Hiding an element can be done by setting block property to "hidden"
+e. None of the above
+
+
+6) What is the out of the following code?
+
+<script type="text/javascript">
+x="1"+2+4;
+document.write(x);
+</script>
+
+a. 16
+b. 124
+c. 34
+d. 124.0
+e. 16.0
+
+
+7) Which is the correct way to write a JavaScript array?
+
+a. var txt = new Array(1:"tim",2:"kim",3:"jim")
+b. var txt = new Array:1=("tim")2=("kim")3=("jim")
+c. var txt = new Array("tim","kim","jim") *answer
+d. var txt = new Array="tim","kim","jim"
+e. var txt = new "tim","kim","jim"
+
+
+8) In CSS, it is not possible to specify different padding for different sides?
+
+a. True
+b. False *answer
+
+9) What is the correct JavaScript syntax to write "Hello World"?
+
+a. System.out.println("Hello World")
+b. println ("Hello World")
+c. document.write("Hello World") *answer
+d. response.write("Hello World")
+e. System.out.printf("Hello World")
+
+
+10) HTML id should not start with a number?
+
+a. True *answer
+b. False
+
+
+11) Which of the following is the correct syntax for commenting?
+
+a. /* Comments */ *answer
+b. ** Comments **
+c. */ Comment */
+d. { Comment }
+e. None of the above
+
+
+12) What is the complexity of Binary Search?
+
+a. O(log(n)) *answer
+b. O(n)
+c. O(n^2)
+d. O(2)
+e. None of the above
+
+
+13) The acronym ACID is typically used in reference to:
+
+a. Transactions *answer
+b. CRM analytics
+c. Data integrity
+d. Stubs
+e. None of the above
+
+
+
+14) Consider the method
+
+public String mystery(String s)
+{
+ String s1 = s.substring(0,1);
+ String s2 = s.substring(1, s.length() - 1);
+ String s3 = s.substring(s.length() - 1);
+
+ if (s.length() <= 3)
+     return s3 + s2 + s1;
+ else
+     return s1 + mystery(s2) + s3;
+}
+
+What is the output of
+System.out.println(mystery("DELIVER"));
+
+a. DELIVER
+b. DEVILER
+c. REVILED
+d. RELIVED *answer
+e. DLEIEVR
+
+
+15) What is the output of the following code?
+
+System.out.println("1" + new Integer(2) + 3);
+
+a. The statement has a syntax error and won't compile
+b. 6
+c. 15 *answer
+d. 123
+e. ClassCastException  
+
+
+
+16) What is the value of a[1] after the following code is executed?
+
+int[ ] a = {0, 2, 4, 1, 3};
+
+for (int i = 0; i < a.length; i++)
+a[i] = a[(a[i] + 3) % a.length];
+
+a. 0
+b. 1 *answer
+c. 2
+d. 3
+e. 4
+
+
+17) Which of the following is not a method of java.util.ArrayList?
+
+a. add(Object x);
+b. remove(Object x);
+c. insert(int i, Object x);
+d. contains(Object x);
+e. set(int i, Object x);  *answer *answer
+
+
+18)What is the value of n after the following code is executed?
+
+int n = 2005;
+for (int i = 0; i < 50; i++)
+n = (n + 3) / 2;
+
+a. 0
+b. 1
+c. 2
+d. 3 *answer
+e. 65
+
+
+19) What is the output of the following code?
+
+String s = "ONION";
+System.out.println(s.substring(1, 5).substring(1, 4).substring(0, 3));
+
+a. I
+b. IO
+c. ION *answer
+d. ONI
+e. NION
+
+
+
+
+20) Consider two methods:
+
+public int f(int x)
+{
+ return x + 2;
+}
+
+and
+
+public int g(int x)
+{
+ return x * 2;
+}
+
+What is the value of x after the following code executes?
+
+int x = 1;
+x += f(g(x)) - g(f(x));
+
+a. -9
+b. -2
+c. -1 *answer
+d. 3
+e. 7
+
+
+21) The use of the break statement in a switch statement is
+
+a. optional  *answer
+b. compulsory 
+c. not allowed. It gives an error message
+d. to check an error
+e. None of the above
+
+
+22) Consider the following code
+
+public class TestOverriding {
+
+public static void main(String aga[]){
+
+ Test t =new Fest();
+
+ t.tests();
+  }
+}
+
+class Test{
+
+ void tests(){
+
+ System.out.println("Test class : tests");
+  }
+}
+
+class Fest extends Test{
+
+ static void tests(){
+
+ System.out.println("Fest class : tests");
+  }
+}
+
+Which of the following statement is true?
+
+a. Code compiles fine , but doesn't give output
+b. Code complains of illegal override at line 13
+c. Prints "Fest Class : tests"
+d. Prints "Test Class : tests"  *answer
+e. None of the above
+
+
+23) Which of the following Collection are synchronized by nature ?
+
+a. Vector
+b. SortedSet
+c. HashTable
+d. HashMap
+e. None of the above
+
+24) What will be the output of the following code snippet if tried to compile and run
+
+String x= "abc";
+String y= "xyz";
+x.concat(y);
+System.out.print(x);
+
+a. abc
+b. abcxyz
+c. xyzabc
+d. abc xyz
+e. None of the above
+
+
+25) How to send data in GET request method?
+
+a. We can't
+b. Through URL *answer
+c. Through payload
+d. b & c
+e. None of these
+
+
+26) How to select ename from Emp table where Comm is Null ?
+
+a. SELECT ename, deptno FROM emp WHERE comm IS NULL *answer
+b. SELECT ename, deptno FROM emp WHERE comm NULL
+c. SELECT ename, deptno FROM emp WHERE comm == NULL
+d. All the above
+e. None of the above
+
+
+27) The command we do use to delete rows is
+
+a. delete *answer
+b. drop
+c. truncate
+d. All of above
+e. None of the above
+
+
+28) Which is not a DDL command?
+
+a. rename
+b. update *answer
+c. create
+d. alter
+e. drop
+
+29)Which of the following feature is not supported by Java?
+
+a. Multithreading
+b. Reflection *answer
+c. Operator Overloading
+d. Garbage Collection
+e. None of the above
+
+
+30) Which of these interfaces must contain a unique element?
+
+a. Set *answer
+b. List
+c. Array
+d. Collection
+e. None of the above
+
